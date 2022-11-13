@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Vertical Space Tightener and UI Tweaks
 @namespace      github.com/lendot/cohost-styluss
-@version        1.0.0
+@version        1.0.1
 @description    Reduces vertical spacing/padding to make things more compact. Also makes some aesthetic UI tweaks like removing shadows and making the background white
 @author         Len Lanphar <llanphar.cohost@fastmail.com>
 @license        CC-BY-SA-4.0
@@ -64,7 +64,6 @@
     textarea,
     select {
         background-color: rgb(255 255 255/var(--tw-bg-opacity));
+        color: rgb(25 25 25/var(--tw-text-opacity));
     }
 }
-
-
