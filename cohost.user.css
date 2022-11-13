@@ -1,0 +1,70 @@
+/* ==UserStyle==
+@name           Vertical Space Tightener and UI Tweaks
+@namespace      github.com/lendot/cohost-styluss
+@version        1.0.0
+@description    Reduces vertical spacing/padding to make things more compact. Also makes some aesthetic UI tweaks like removing shadows and making the background white
+@author         Len Lanphar <llanphar.cohost@fastmail.com>
+@license        CC-BY-SA-4.0
+}
+==/UserStyle== */
+@-moz-document domain("cohost.org") {
+    .gap-12 {
+        gap: 1rem;
+    }
+
+    .prose {
+        line-height: 1.3;
+    }
+
+    .p-3 {
+        padding: 0.5rem 0.75rem;
+    }
+
+    :not(svg):not(.mask).cohost-shadow-light {
+        box-shadow: none;
+        border: 1px solid rgba(20, 20, 20, .2);
+    }
+
+    .bg-notWhite {
+        --tw-bg-opacity: 1;
+        background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    }
+
+    .mask.cohost-shadow-light {
+        filter: none;
+    }
+
+    .border-gray-300 {
+        --tw-border-opacity: 1;
+        border-color: rgb(229 223 217/var(--tw-border-opacity));
+    }
+
+    :root {
+        --color-notWhite: 255 255 255;
+    }
+
+    .text-gray-600 {
+        --tw-text-opacity: 1;
+        color: rgb(91 89 87/var(--tw-text-opacity));
+    }
+
+    [type="text"],
+    [type="email"],
+    [type="url"],
+    [type="password"],
+    [type="number"],
+    [type="date"],
+    [type="datetime-local"],
+    [type="month"],
+    [type="search"],
+    [type="tel"],
+    [type="time"],
+    [type="week"],
+    [multiple],
+    textarea,
+    select {
+        background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    }
+}
+
+
